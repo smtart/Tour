@@ -1,0 +1,920 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Hyderabad Hangouts reponsive website build using HTML5, CSS3 and Javascript. The complete layout of the page is build using grid layout and flexbox with some cool animations"
+    />
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon.png" />
+    <link rel="stylesheet" href="font/stylesheet.css" media="screen" />
+    <link rel="stylesheet" href="css/style.css" media="screen" />
+    <title>Hyderabad Hangouts - Explore the world</title>
+  </head>
+  <body>
+    <!-- HEADER -->
+    <header class="header">
+      <div class="container">
+        <div class="navigation">
+          <div class="logo">Hyderabad Hangouts</div>
+          <img
+            src="img/nav-icon.svg"
+            class="nav-icon"
+            alt="navigation icon"
+            width="30"
+            height="30"
+          />
+          <ul>
+            <li>
+              <a href="#home"> Home </a>
+            </li>
+            <li>
+              <a href="#about"> About </a>
+            </li>
+            <li>
+              <a href="#tours"> Tours </a>
+            </li>
+            <li>
+              <a href="#offers"> Offers </a>
+            </li>
+            <li>
+              <a href="./destination.html"> <button type="button" class="btn btn-info" id="button">Book Now</button></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <!-- SECTION HERO -->
+      <section class="section-hero">
+        <div class="container">
+          <div class="hero-content">
+            <h1 class="heading heading--1 margin-bottom">
+              Discover the soul of Hyderabad, where every step is an exploration
+            </h1>
+              <div class="button-center">
+                 <a href="./destination.html"> <button type="button" class="btn btn-info" id="button">Create your own trip</button></a>
+              </div>         
+          </div>
+        </div>
+      </section>
+
+      <!-- SECTION SEARCH -->
+      
+
+      <!-- SECTION ABOUT -->
+      <div class="about-box__content">
+      <section class="section-about" id="about">
+        <div class="container about-box" data-aos="fade-up">
+          <div class="about-box__heading">
+            <h3 class="color-blue margin-bottom">About us</h3>
+            <div class="heading heading--1 capitalize">
+              Explore all corners of the Hyderabad with us
+            </div>
+          </div>
+          <div class="about-box__content">
+            <p class="margin-bottom">
+              Welcome to Hyderabad Hangouts, your ultimate guide to the enchanting city of Hyderabad! Whether you're a first-time visitor or a seasoned traveler, our website is your one-stop destination for discovering the vibrant culture, rich history, and myriad attractions of this bustling metropolis. From iconic landmarks like the Charminar and Golconda Fort to delectable cuisine and vibrant markets, we provide comprehensive insights, travel tips, and curated itineraries to ensure an unforgettable experience in the 'City of Pearls'. Let Hyderabad Hangouts be your companion as you embark on an adventure through the heart of Telangana's capital city. </p>
+          </div>
+        </div>
+      </section>
+    </div>
+
+      <!-- SECTION TOURS -->
+      <section class="section-tours" id="tours">
+        <div class="container tour-box" data-aos="fade-up">
+          <header class="tour-box__heading">
+            <h2 class="heading heading--2 color-blue margin-bottom">
+              Popular Places In Hyderabad
+            </h2>
+            <p>
+              Hyderabad's charm lies in its blend of old-world Nizami grandeur and modern sophistication, showcased in landmarks like the iconic Charminar, serene Hussain Sagar Lake, and the opulent Chowmahalla Palace etc...
+            </p>
+          </header>
+
+          <article class="tour-box__cards">
+            
+            <div class="t-card" data-aos="flip-left" data-aos-duration="1000">
+              <a href="members.html">
+              <img
+                src="img/Charminar.jpg"
+                alt="Charminar"
+                width="500"
+                height="500"
+                class="t-card__img"
+              /></a>
+
+              <div class="t-card__content">
+                <div class="t-card__title">
+                  <h3 class="name">Charminar</h3>
+                  <p class="price">₹250</p>
+                </div>
+
+                <div class="t-card__description">
+                  Where History Meets Majesty
+                </div>
+
+                <div class="t-card__items">
+                  <div class="days">Old City</div>
+                  <div class="likes">
+                    <img
+                      src="img/rating star.png"
+                      alt="star"
+                      width="30"
+                      height="30"
+                    />
+                    4.5
+                  </div>
+                </div>
+              </div>
+            </div>
+            
+            
+            <div class="t-card" data-aos="flip-left" data-aos-duration="1000">
+              <a href="members.html">
+              <img
+                src="img/Chowmahalla.jpg"
+                alt="Chowmahalla"
+                width="500"
+                height="500"
+                class="t-card__img"
+              /></a>
+
+              <div class="t-card__content">
+                <div class="t-card__title">
+                  <h3 class="name">Chowmahalla</h3>
+                  <p class="price">₹400</p>
+                </div>
+
+                <div class="t-card__description">
+                  Majestic Memories of the Nizams
+                </div>
+
+                <div class="t-card__items">
+                  <div class="days">Khilwat</div>
+                  <div class="likes">
+                    <img
+                       src="img/rating star.png"
+                      alt="star"
+                      width="30"
+                      height="30"
+                    />
+                    4.4
+                  </div>
+                </div>
+              </div>
+            </div>
+            
+            
+            <div class="t-card" data-aos="flip-left" data-aos-duration="1000">
+              <a href="booking.html">
+              <img
+                src="img/Birla Science Center.jpg"
+                alt="Birla Science Center"
+                width="500"
+                height="500"
+                class="t-card__img"
+              /></a>
+
+              <div class="t-card__content">
+                <div class="t-card__title">
+                  <h3 class="name">Birla Science Center</h3>
+                  <p class="price">₹150</p>
+                </div>
+
+                <div class="t-card__description">
+                  Where Curiosity Meets Discovery.
+                </div>
+
+                <div class="t-card__items">
+                  <center><div class="days">B.M. Birla Science Center</div></center>
+                  <div class="likes">
+                    <img
+                       src="img/rating star.png"
+                      alt="star"
+                      width="30"
+                      height="30"
+                    />
+                    4.4
+                  </div>
+                </div>
+              </div>
+            </div>
+          
+          
+            <div class="t-card" data-aos="flip-left" data-aos-duration="1000">
+              <a href="members.html">
+              <img
+                src="img/Wonderla.jpg"
+                alt="Wonderla"
+                width="500"
+                height="500"
+                class="t-card__img"
+              /></a>
+
+              <div class="t-card__content">
+                <div class="t-card__title">
+                  <h3 class="name">Wonderla</h3>
+                  <p class="price">₹1200</p>
+                </div>
+
+                <div class="t-card__description">
+                  Make Every Moment Magical.
+                </div>
+
+                <div class="t-card__items">
+                  <div class="days">Nehru Outer Ring Road</div>
+                  <div class="likes">
+                    <img
+                       src="img/rating star.png"
+                      alt="star"
+                      width="30"
+                      height="30"
+                    />
+                    4.0
+                  </div>
+                </div>
+              </div>
+            </div>
+          
+          
+            <div class="t-card" data-aos="flip-left" data-aos-duration="1000">
+              <a href="members.html">
+              <img
+                src="img/NTR Gardens.jpg"
+                alt="NTR Gardens"
+                width="500"
+                height="500"
+                class="t-card__img"
+              /></a>
+
+              <div class="t-card__content">
+                <div class="t-card__title">
+                  <h3 class="name">NTR Gardens</h3>
+                  <p class="price"></p>
+                </div>
+
+                <div class="t-card__description">
+                  Hyderabad’s Green Haven.
+                </div>
+
+                <div class="t-card__items">
+                  <div class="days">Khairtabad,NTR Marg</div>
+                  <div class="likes">
+                    <img
+                       src="img/rating star.png"
+                      alt="star"
+                      width="30"
+                      height="30"
+                    />
+                    4.2
+                  </div>
+                </div>
+              </div>
+            </div>
+          
+          
+            <div class="t-card" data-aos="flip-left" data-aos-duration="1000">
+              <a href="members.html">
+              <img
+                src="img/Ramoji Film City.jpg"
+                alt="Ramoji Film City"
+                width="500"
+                height="500"
+                class="t-card__img"
+              /></a>
+
+              <div class="t-card__content">
+                <div class="t-card__title">
+                  <h3 class="name">Ramoji Film City</h3>
+                  <p class="price">₹1,179</p>
+                </div>
+
+                <div class="t-card__description">
+                  A Universe of Entertainment.
+                </div>
+
+                <div class="t-card__items">
+                  <div class="days">Anaspur Village</div>
+                  <div class="likes">
+                    <img
+                       src="img/rating star.png"
+                      alt="star"
+                      width="30"
+                      height="30"
+                    />
+                    4.4
+                  </div>
+                </div>
+              </div>
+            </div>
+          
+          
+            <div class="t-card" data-aos="flip-left" data-aos-duration="1000">
+              <a href="members.html">
+              <img
+                src="img/Salar Jung Museum.jpg"
+                alt="Salar Jung Museum"
+                width="500"
+                height="500"
+                class="t-card__img"
+              /></a>
+
+              <div class="t-card__content">
+                <div class="t-card__title">
+                  <h3 class="name">Salar Jung Museum</h3>
+                  <p class="price">₹500</p>
+                </div>
+
+                <div class="t-card__description">
+                  Where History Speaks Through Art.
+                </div>
+
+                <div class="t-card__items">
+                  <div class="days">Darulshifa</div>
+                  <div class="likes">
+                    <img
+                      src="img/rating star.png"
+                      alt="star"
+                      width="30"
+                      height="30"
+                    />
+                    4.4
+                  </div>
+                </div>
+              </div>
+            </div>
+          
+          
+            <div class="t-card" data-aos="flip-left" data-aos-duration="1000">
+              <a href="members.html">
+              <img
+                src="img/KBR National Park.jpg"
+                alt="KBR National Park"
+                width="500"
+                height="500"
+                class="t-card__img"
+              /></a>
+
+              <div class="t-card__content">
+                <div class="t-card__title">
+                  <h3 class="name">KBR National Park</h3>
+                  <p class="price"></p>
+                </div>
+
+                <div class="t-card__description">
+                  A large urban park and protected area ideal for nature walks and bird watching.
+                </div>
+
+                <div class="t-card__items">
+                  <div class="days">Jubilee Hills</div>
+                  <div class="likes">
+                    <img
+                       src="img/rating star.png"
+                      alt="star"
+                      width="30"
+                      height="30"
+                    />
+                    4.5
+                  </div>
+                </div>
+              </div>
+            </div>
+          
+            
+            <div class="t-card" data-aos="flip-left" data-aos-duration="1000">
+              <a href="members.html">
+              <img
+                src="img/Mrugavani National Park.jpg"
+                alt="Mrugavani National Park"
+                width="500"
+                height="500"
+                class="t-card__img"
+              /></a>
+
+              <div class="t-card__content">
+                <div class="t-card__title">
+                  <h3 class="name">Mrugavani National Park</h3>
+                  <p class="price"></p>
+                </div>
+
+                <div class="t-card__description">
+                  A wildlife sanctuary near the city, offering nature trails and a glimpse of local fauna.
+                </div>
+
+                <div class="t-card__items">
+                  <div class="days">Chilkur</div>
+                  <div class="likes">
+                    <img
+                       src="img/rating star.png"
+                      alt="star"
+                      width="30"
+                      height="30"
+                    />
+                    4.0
+                  </div>
+                </div>
+              </div>
+            </div>
+            
+            <div class="t-card" data-aos="flip-left" data-aos-duration="1000">
+              <a href="members.html">
+              <img
+                src="img/Shamirpet Lake.jpg"
+                alt="Shamirpet Lake"
+                width="500"
+                height="500"
+                class="t-card__img"
+              /></a>
+
+              <div class="t-card__content">
+                <div class="t-card__title">
+                  <h3 class="name">Shamirpet Lake</h3>
+                  <p class="price"></p>
+                </div>
+
+                <div class="t-card__description">
+                  A serene lake and picnic spot, less crowded and perfect for a quiet outing.
+                </div>
+
+                <div class="t-card__items">
+                  <div class="days">Shamirpet</div>
+                  <div class="likes">
+                    <img
+                       src="img/rating star.png"
+                      alt="star"
+                      width="30"
+                      height="30"
+                    />
+                    4.5
+                  </div>
+                </div>
+              </div>
+            </div>
+          
+            <div class="t-card" data-aos="flip-left" data-aos-duration="1000">
+              <a href="members.html">
+              <img
+                src="img/Mahavir Harina Vanasthali National Park.jpg"
+                alt="Mahavir Harina Vanasthali National Park"
+                width="500"
+                height="500"
+                class="t-card__img"
+              /></a>
+
+              <div class="t-card__content">
+                <div class="t-card__title">
+                  <h3 class="name">Mahavir Harina Vanasthali National Park</h3>
+                  <p class="price"></p>
+                </div>
+
+                <div class="t-card__description">
+                  A green sanctuary with a variety of deer and other wildlife.
+                </div>
+
+                <div class="t-card__items">
+                  <div class="days">Vanasthalipuram</div>
+                  <div class="likes">
+                    <img
+                       src="img/rating star.png"
+                      alt="star"
+                      width="30"
+                      height="30"
+                    />
+                    4.0
+                  </div>
+                </div>
+              </div>
+            </div>
+          
+            <div class="t-card" data-aos="flip-left" data-aos-duration="1000">
+              <a href="members.html">
+              <img
+                src="img/Durgam Cheruvu.jpg"
+                alt="Durgam Cheruvu"
+                width="500"
+                height="500"
+                class="t-card__img"
+              /></a>
+
+              <div class="t-card__content">
+                <div class="t-card__title">
+                  <h3 class="name">Durgam Cheruvu</h3>
+                  <p class="price"></p>
+                </div>
+
+                <div class="t-card__description">
+                  A hidden lake also known as the "Secret Lake," surrounded by granite rocks.
+                </div>
+
+                <div class="t-card__items">
+                  <div class="days">Jubilee Hills</div>
+                  <div class="likes">
+                    <img
+                       src="img/rating star.png"
+                      alt="star"
+                      width="30"
+                      height="30"
+                    />
+                    3.7
+                  </div>
+                </div>
+              </div>
+            </div>
+          
+            <div class="t-card" data-aos="flip-left" data-aos-duration="1000">
+              <a href="members.html">
+              <img
+                src="img/Taramati Baradari.jpg"
+                alt="Taramati Baradari"
+                width="500"
+                height="500"
+                class="t-card__img"
+              /></a>
+
+              <div class="t-card__content">
+                <div class="t-card__title">
+                  <h3 class="name">Taramati Baradari</h3>
+                  <p class="price"></p>
+                </div>
+
+                <div class="t-card__description">
+                  An ancient music hall with historical significance and a scenic location.
+                </div>
+
+                <div class="t-card__items">
+                  <div class="days">Gandipet</div>
+                  <div class="likes">
+                    <img
+                       src="img/rating star.png"
+                      alt="star"
+                      width="30"
+                      height="30"
+                    />
+                    4.2
+                  </div>
+                </div>
+              </div>
+            </div>
+          
+            <div class="t-card" data-aos="flip-left" data-aos-duration="1000">
+              <a href="members.html">
+              <img
+                src="img/Hussain Sagar Lake.jpg"
+                alt="Hussain Sagar Lake"
+                width="500"
+                height="500"
+                class="t-card__img"
+              /></a>
+
+              <div class="t-card__content">
+                <div class="t-card__title">
+                  <h3 class="name">Hussain Sagar Lake</h3>
+                  <p class="price"></p>
+                </div>
+
+                <div class="t-card__description">
+                  A large man-made lake with a giant Buddha statue in the middle.
+                </div>
+
+                <div class="t-card__items">
+                  <div class="days">Necklace Road</div>
+                  <div class="likes">
+                    <img
+                       src="img/rating star.png"
+                      alt="star"
+                      width="30"
+                      height="30"
+                    />
+                    4.4
+                  </div>
+                </div>
+              </div>
+            </div>
+          
+             <div class="t-card" data-aos="flip-left" data-aos-duration="1000">
+              <a href="members.html">
+              <img
+                src="img/Paigah Tombs.jpg"
+                alt="Paigah Tombs"
+                width="500"
+                height="500"
+                class="t-card__img"
+              /></a>
+
+              <div class="t-card__content">
+                <div class="t-card__title">
+                  <h3 class="name">Paigah Tombs</h3>
+                  <p class="price"></p>
+                </div>
+
+                <div class="t-card__description">
+                  Intricately designed tombs of the Paigah nobles, known for their unique architecture and carvings.
+                </div>
+
+                <div class="t-card__items">
+                  <div class="days">Santosh Nagar</div>
+                  <div class="likes">
+                    <img
+                       src="img/rating star.png"
+                      alt="star"
+                      width="30"
+                      height="30"
+                    />
+                    4.5
+                  </div>
+                </div>
+              </div>
+            </div>
+          
+            <div class="t-card" data-aos="flip-left" data-aos-duration="1000">
+              <a href="members.html">
+              <img
+                src="img/Qutb Shahi tombs.jpg"
+                alt="Qutb Shahi tombs"
+                width="500"
+                height="500"
+                class="t-card__img"
+              /></a>
+
+              <div class="t-card__content">
+                <div class="t-card__title">
+                  <h3 class="name">Qutb Shahi tombs</h3>
+                  <p class="price"></p>
+                </div>
+
+                <div class="t-card__description">
+                  The royal necropolis of the Qutb Shahi dynasty, featuring beautiful tombs and mosques.
+                </div>
+
+                <div class="t-card__items">
+                  <div class="days">Ibrahim Bagh</div>
+                  <div class="likes">
+                    <img
+                       src="img/rating star.png"
+                      alt="star"
+                      width="30"
+                      height="30"
+                    />
+                    4.4
+                  </div>
+                </div>
+              </div>
+            </div>
+          
+            <div class="t-card" data-aos="flip-left" data-aos-duration="1000">
+            <a href="members.html">
+              <img
+                src="img/Maula Ali Dargah.jpg"
+                alt="Maula Ali Dargah"
+                width="500"
+                height="500"
+                class="t-card__img"
+              /></a>
+
+              <div class="t-card__content">
+                <div class="t-card__title">
+                  <h3 class="name">Maula Ali Dargah</h3>
+                  <p class="price"></p>
+                </div>
+
+                <div class="t-card__description">
+                  A hilltop mosque and shrine with panoramic views and a spiritual ambiance.
+                </div>
+
+                <div class="t-card__items">
+                  <div class="days">Moula Ali</div>
+                  <div class="likes">
+                    <img
+                       src="img/rating star.png"
+                      alt="star"
+                      width="30"
+                      height="30"
+                    />
+                    4.7
+                  </div>
+                </div>
+              </div>
+            </div>
+          
+            <div class="t-card" data-aos="flip-left" data-aos-duration="1000">
+              <a href="members.html">
+              <img
+                src="img/Birla Mandir.jpeg"
+                alt="Birla Mandir"
+                width="500"
+                height="500"
+                class="t-card__img"
+              /></a>
+
+              <div class="t-card__content">
+                <div class="t-card__title">
+                  <h3 class="name">Birla Mandir</h3>
+                  <p class="price"></p>
+                </div>
+
+                <div class="t-card__description">
+                  A Hindu temple built on a 280-foot-high hillock, offering panoramic views of the city.
+
+                </div>
+
+                <div class="t-card__items">
+                  <div class="days">Hill Fort Road</div>
+                  <div class="likes">
+                    <img
+                       src="img/rating star.png"
+                      alt="star"
+                      width="30"
+                      height="30"
+                    />
+                    4.7
+                  </div>
+                </div>
+              </div>
+            </div>
+
+
+          </article>
+        </div>
+      </section>
+
+      <!-- SECTION OFFER -->
+      <section class="section-offer" id="offers">
+        <div class="container offer-box">
+          <div class="offer-box__percentage" data-aos="zoom-in">50%</div>
+          <div class="offer-box__content" data-aos="fade-up">
+            <h2 class="heading heading--2">
+              Special Offer on our tours ₹250 Reguler ₹500
+            </h2>
+            <p>
+              "Hyderabad is not just a city; it's an emotion. Its rich history, vibrant culture, and warm hospitality make it a place where every corner tells a story, and every step feels like a journey through time."
+            </p>
+            <a href="./destination.html"> <button type="button" class="btn btn-info" id="button">Book Now</button></a>
+
+          </div>
+        </div>
+      </section>
+
+      <!-- SECTION REVIEW -->
+      <section class="section-review">
+        <div class="container review-box" data-aos="fade-up">
+          <header class="review-header">
+            <h3 class="color-blue">Our Reviews</h3>
+            <h2 class="heading heading--2">What the people say about us</h2>
+          </header>
+
+          <article class="review-cards">
+            <div class="r-card">
+              <img
+                src="img/user-1.jpg"
+                alt=""
+                class="r-card__img"
+                width="90"
+                height="90"
+              />
+              <div class="r-card__name">Sai Dath</div>
+              <span class="quot">&#8223;</span>
+              <div class="r-card__description">
+                Hyderabad Hangouts is a fantastic resource for discovering the city's hidden gems and planning the perfect trip!
+              </div>
+              <div class="r-card__rating">
+                <img
+                  src="img/star-grp.svg"
+                  alt="star"
+                  width="100"
+                  height="30"
+                />
+              </div>
+            </div>
+
+            <div class="r-card">
+              <img
+                src="img/user-2.jpg"
+                alt=""
+                class="r-card__img"
+                width="90"
+                height="90"
+              />
+              <div class="r-card__name">Dinesh</div>
+              <span class="quot">&#8223;</span>
+              <div class="r-card__description">
+                Hyderabad Hangouts made exploring the city effortless with its comprehensive guides and user-friendly interface.
+              </div>
+              <div class="r-card__rating">
+                <img
+                  src="img/star-grp.svg"
+                  alt="star"
+                  width="100"
+                  height="30"
+                />
+              </div>
+            </div>
+          </article>
+        </div>
+      </section>
+    </main>
+
+    <!-- SECTION FOOTER -->
+    <footer class="section-footer">
+      <div class="footer-box container">
+        <div class="contact-details">
+          <h2 class="heading heading--2 margin-bottom">Tourism</h2>
+          <ul class="contact-data">
+            <li class="location">Warangal-Narsampet Rd, Laknepelly, Telangana 506330</li>
+            <li class="phone">9866078590</li>
+            <li class="email">bitswgl.ac.in</li>
+            <li class="social">
+              <img
+                src="./img/logo-whatsapp.svg"
+                alt="whatsapp icon"
+                width="35"
+                height="35"
+              />
+
+              <img
+                src="./img/logo-facebook.svg"
+                alt="facebook icon"
+                width="35"
+                height="35"
+              />
+
+              <img
+                src="./img/logo-instagram.svg"
+                alt="instagram icon"
+                width="35"
+                height="35"
+              />
+
+              <img
+                src="./img/logo-twitter.svg"
+                alt="twitter icon"
+                width="35"
+                height="35"
+              />
+            </li>
+          </ul>
+        </div>
+
+        <nav class="footer-nav" aria-label="navigation">
+          <div class="nav-name">Quick Links</div>
+          <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#tours">Tours</a></li>
+            <li><a href="#offers">Offeres</a></li>
+            <li><a href="#">Contact</a></li>
+          </ul>
+        </nav>
+
+        <nav class="footer-nav" aria-label="navigation">
+          <div class="nav-name">Popular Destination</div>
+          <ul>
+            <li><a href="#tours">Charminar</a></li>
+            <li><a href="#tours">Chowmahalla</a></li>
+            <li><a href="#tours">Birla Science Center</a></li>
+            <li><a href="#tours">NTR Gardens</a></li>
+            <li><a href="#tours">Ramoji Film City</a></li>
+          </ul>
+        </nav>
+
+        <div class="Itinerary">
+          <div class="Itinerary__title">Upload Your Itinerary</div>
+          <div class="Itinerary__text">
+            "Let your journeys inspire others: Share your personalized travel routes with the world!"
+          </div>
+          <form class="newsletter__input">
+            <a href="User-Itinerary.html">
+            <input type="text" placeholder="Write your itinerary" />
+            <img
+              src="./img/send.svg"
+              alt="send icon"
+              class="send-icon"
+              width="36"
+              height="36"
+            /></a>
+          </form>
+        </div>
+ 
+        <div class="container-view">
+          <div class="Itinerary-upload">
+            <div class="Itinerary__title_upload">View Reviews</div>
+              <div class="Itinerary__text_upload">
+                Here are the best Itineraries which are uploaded by the users
+              </div>
+              <form class="newsletter__input_upload">
+              <button type="submit_upload" class="view-button">View Itinerary</button>
+              </form>
+           </div>
+          </div>
+        </div>
+
+
+    </footer>
+
+    <!-- SCRIPT -->
+    <script src="index.js"></script>
+  </body>
+</html>

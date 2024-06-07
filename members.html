@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Booking Members</title>
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        .popup {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.5);
+        }
+
+        .popup-content {
+            background-color: white;
+            padding: 20px;
+            width: 300px;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+    </style>
+</head>
+<body class="booking-members">
+
+<div class="no-of-days">
+    <h1 style="text-align: center; color: white;">Who is traveling with you?</h1>
+    <center><a href="./budget.html"> 
+        <div class="container-book" onclick="goToNextPage('page1.html')">
+            <div class="circle">
+                <img src="img/solo1.jpg" alt="solo1">
+            </div>
+            <div class="text">Solo </div>
+        </div></a>
+        <a href="./budget.html">
+        <div class="container-book" onclick="goToNextPage('page2.html')">
+            <div class="circle">
+                <img src="img/couple1.jpg" alt="couple1">
+            </div>
+            <div class="text">Couple </div>
+        </div></a>
+        
+        <div class="container-book" onclick="showPopup('Friends')">
+            <div class="circle">
+                <img src="img/friend2.jpg" alt="friend2">
+            </div>
+            <div class="text">Friends </div>
+        </div>
+        
+        <div class="container-book" onclick="showPopup('Family')">
+            <div class="circle">
+                <img src="img/family1.jpg" alt="family1">
+            </div>
+            <div class="text">Family </div>
+        </div>
+    </center>
+</div>
+
+<div id="popup" class="popup">
+    <div class="popup-content">
+        <span class="close" onclick="closePopup()">&times;</span>
+        <h2><center>Please enter the number of adults and children:</center></h2>
+        <div>
+            <label for="adults">Adults:</label>
+            <input type="number" id="adults" placeholder="Number of adults" min="0" value="0">
+        </div>
+        <div>
+            <label for="children">Children:</label>
+            <input type="number" id="children" placeholder="Number of children" min="0" value="0">
+        </div><center>
+            <a href="./budget.html">
+        <button onclick="submitFriendsFamily()">Submit</button></a></center>
+    </div>
+</div>
+
+<script>
+    function goToNextPage(nextPage) {
+        window.location.href = nextPage;
+    }
+
+    function showPopup(group) {
+        document.getElementById("popup").style.display = "block";
+        document.getElementById("group").value = group;
+        // Reset input values to zero every time the popup is shown
+        document.getElementById("adults").value = "0";
+        document.getElementById("children").value = "0";
+    }
+
+    function closePopup() {
+        document.getElementById("popup").style.display = "none";
+    }
+
+    function submitFriendsFamily() {
+        var adults = parseInt(document.getElementById("adults").value);
+        var children = parseInt(document.getElementById("children").value);
+
+        if (adults < 0 || children < 0) {
+            alert("Please enter non-negative numbers for adults and children.");
+            return;
+        }
+
+        var nextPage = 'nextPage.html'; 
+        
+        console.log("Adults: " + adults + ", Children: " + children);
+
+        window.location.href = nextPage;
+    }
+</script>
+
+</body>
+</html>

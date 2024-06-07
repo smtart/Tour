@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Booking Members</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="budget">
+<div class="no-of-days">
+    <h1 style="text-align: center; color: white;">What's your budget for the holiday?</h1>
+    <center>
+       
+            <div class="container-book" onclick="goToNextPage('page1.html')">
+                <div class="circle">
+                    <img src="img/money.jpg" alt="budget1">
+                </div>
+                <div class="text">₹500 - ₹1000</div>
+            </div>
+        
+        
+            <div class="container-book" onclick="goToNextPage('page2.html')">
+                <div class="circle">
+                    <img src="img/money.jpg" alt="budget2">
+                </div>
+                <div class="text">₹1000 - ₹3000</div>
+            </div>
+    
+            <div class="container-book" onclick="goToNextPage('page3.html')">
+                <div class="circle">
+                    <img src="img/money.jpg" alt="budget3">
+                </div>
+                <div class="text">₹3000 - ₹5000</div>
+            </div>
+       
+    </center>
+</div>
+
+<script>
+    function goToNextPage(nextPage) {
+        window.location.href = nextPage;
+    }
+</script>
+
+</body>
+</html>

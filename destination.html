@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Telangana Districts</title>
+    <!-- Link to external CSS file -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="destination">
+
+<div class="container-destination">
+    <h2>Select a District of Telangana:</h2>
+    <select id="districts" onchange="redirectToBooking()">
+        <!-- Options -->
+        <option value="Adilabad">Adilabad</option>
+        <option value="Bhadradri Kothagudem">Bhadradri Kothagudem</option>
+        <option value="Jagtial">Jagtial</option>
+        <option value="Jangaon">Jangaon</option>
+        <option value="Jayashankar Bhupalapally">Jayashankar Bhupalapally</option>
+        <option value="Jogulamba Gadwal">Jogulamba Gadwal</option>
+        <option value="Kamareddy">Kamareddy</option>
+        <option value="Karimnagar">Karimnagar</option>
+        <option value="Khammam">Khammam</option>
+        <option value="Komaram Bheem Asifabad">Komaram Bheem Asifabad</option>
+        <option value="Mahabubabad">Mahabubabad</option>
+        <option value="Mahabubnagar">Mahabubnagar</option>
+        <option value="Mancherial">Mancherial</option>
+        <option value="Medak">Medak</option>
+        <option value="Medchal-Malkajgiri">Medchal-Malkajgiri</option>
+        <option value="Nagarkurnool">Nagarkurnool</option>
+        <option value="Nalgonda">Nalgonda</option>
+        <option value="Nirmal">Nirmal</option>
+        <option value="Nizamabad">Nizamabad</option>
+        <option value="Peddapalli">Peddapalli</option>
+        <option value="Rajanna Sircilla">Rajanna Sircilla</option>
+        <option value="Rangareddy">Rangareddy</option>
+        <option value="Sangareddy">Sangareddy</option>
+        <option value="Siddipet">Siddipet</option>
+        <option value="Suryapet">Suryapet</option>
+        <option value="Vikarabad">Vikarabad</option>
+        <option value="Wanaparthy">Wanaparthy</option>
+        <option value="Warangal Rural">Warangal Rural</option>
+        <option value="Warangal Urban">Warangal Urban</option>
+        <option value="Yadadri Bhuvanagiri">Yadadri Bhuvanagiri</option>
+    </select>
+</div>
+
+<script>
+    function redirectToBooking() {
+        var selectedDistrict = document.getElementById("districts").value;
+        window.location.href = "booking.html?district=" + selectedDistrict;
+    }
+</script>
+</body>
+</html>
